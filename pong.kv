@@ -20,7 +20,13 @@ PongGame:
             gameworld: _gameworld
             zones: ['general']
             size_of_component_block: 128
-
+        Renderer:
+            gameworld: _gameworld
+            system_id: 'renderer'
+            zones: ['general']
+            frame_count: 2
+            updateable: True
+            shader_source: 'assets/glsl/positionshader.glsl'
     GameScreenManager:
         id: _gamescreenmanager
         gameworld: _gameworld
