@@ -5,7 +5,7 @@ from kivent_core.systems.position_systems import PositionSystem2D
 class PongGame(Widget):
     def __init__(self, **kwargs):
         super(PongGame, self).__init__(**kwargs)
-        self.gameworld.init_gameworld([], callback = self.init_game)
+        self.gameworld.init_gameworld(['position'], callback = self.init_game)
 
     def init_game(self):
         self.setup_states()

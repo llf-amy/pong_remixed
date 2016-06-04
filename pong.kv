@@ -15,6 +15,12 @@ PongGame:
         zones: {'general':10000}
         DebugLabel:
             text:'GameWorld'
+        PositionSystem2D:
+            system_id: 'position'
+            gameworld: _gameworld
+            zones: ['general']
+            size_of_component_block: 128
+
     GameScreenManager:
         id: _gamescreenmanager
         gameworld: _gameworld
